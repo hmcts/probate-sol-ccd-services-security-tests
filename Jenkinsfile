@@ -2,8 +2,7 @@ properties([
   [$class: 'GithubProjectProperty', displayName: 'SOL-CCD-SERVICES ZAP Tests', projectUrlStr: 'https://github.com/hmcts/probate-sol-ccd-services-security-tests.git'],
   parameters([
     string(description: 'SOL-CCD-SERVICES url', defaultValue: 'http://betaDevaprobateapp01.reform.hmcts.net:4104', name: 'SOL_CCD_SERVICES_BASE_URL'),
-  ]),
-  pipelineTriggers([cron('H 23 * * * ')])
+  ])
 ])
 
 node ('master') {
