@@ -5,7 +5,7 @@ properties([
   ])
 ])
 
-node ('master') {
+node () {
   stage ("SOL-CCD-SERVICES ZAP Security test"){
     try {
       sh '''
